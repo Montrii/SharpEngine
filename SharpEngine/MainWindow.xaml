@@ -1,0 +1,23 @@
+﻿<Window x:Class="SharpEngine.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SharpEngine"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="600" Width="700">
+    <Grid>
+        <ListBox Name="listViewProcesses" Margin="20,20,416,413">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{Binding Path=Image, Mode=OneTime}" MaxWidth="15" Height="15"></Image>
+                        <TextBlock Text="{Binding ProcessName}"></TextBlock>
+                        
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
