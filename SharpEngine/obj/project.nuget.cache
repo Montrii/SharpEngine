@@ -1,12 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "SUNslVgzNP9gAByWB3vQ+As73JfXYCosl5Bb8iwMd4WV7yPV5RACs83J8RHM6NBN4dbTwRedb3I8NjV+1CKlKw==",
+  "dgSpecHash": "EtuOQSLxar4fZrfPvEAXLKlm3DVFG35UtyRul671bRUkmHEgaZRZJVjDdTx3VOaoIUeUXURtItkynjTpfyQwGQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Justin\\Documents\\GitHub\\SharpEngine\\SharpEngine\\SharpEngine.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Justin\\.nuget\\packages\\expression.interaction\\3.0.40218\\expression.interaction.3.0.40218.nupkg.sha512",
     "C:\\Users\\Justin\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Justin\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
     "C:\\Users\\Justin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Justin\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
+    "C:\\Users\\Justin\\.nuget\\packages\\prism.wpf\\8.1.97\\prism.wpf.8.1.97.nupkg.sha512",
     "C:\\Users\\Justin\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Expression.Interaction 3.0.40218' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Expression.Interaction",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

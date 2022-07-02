@@ -44,3 +44,9 @@ C:\Users\Justin\Documents\GitHub\SharpEngine\SharpEngine\obj\Debug\net6.0-window
 C:\Users\Justin\Documents\GitHub\SharpEngine\SharpEngine\obj\Debug\net6.0-windows\SharpEngine.pdb
 C:\Users\Justin\Documents\GitHub\SharpEngine\SharpEngine\obj\Debug\net6.0-windows\SharpEngine.genruntimeconfig.cache
 C:\Users\Justin\Documents\GitHub\SharpEngine\SharpEngine\obj\Debug\net6.0-windows\ref\SharpEngine.dll
+C:\Users\Justin\Documents\GitHub\SharpEngine\SharpEngine\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Justin\Documents\GitHub\SharpEngine\SharpEngine\bin\Debug\net6.0-windows\Prism.dll
+C:\Users\Justin\Documents\GitHub\SharpEngine\SharpEngine\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\Justin\Documents\GitHub\SharpEngine\SharpEngine\bin\Debug\net6.0-windows\Prism.Wpf.dll
+C:\Users\Justin\Documents\GitHub\SharpEngine\SharpEngine\bin\Debug\net6.0-windows\Microsoft.Expression.Interactions.dll
+C:\Users\Justin\Documents\GitHub\SharpEngine\SharpEngine\bin\Debug\net6.0-windows\System.Windows.Interactivity.dll

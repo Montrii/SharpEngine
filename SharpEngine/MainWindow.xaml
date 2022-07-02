@@ -4,15 +4,25 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SharpEngine"
+        xmlns:vm="clr-namespace:SharpEngine.MVVM"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="600" Width="700">
+    <Window.DataContext>
+        <vm:WindowController></vm:WindowController>
+    </Window.DataContext>
     <Grid>
-        <ListBox Name="listViewProcesses" Margin="20,20,416,413">
+        <ListBox Name="listViewProcesses" Margin="20,20,416,413" ItemsSource="{Binding ActiveProcesses}">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <i:InvokeCommandAction Command="{Binding listBoxSelectionChanged}"  CommandParameter="{Binding ElementName=listViewProcesses, Path=SelectedItem}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="{Binding Path=Image, Mode=OneTime}" MaxWidth="15" Height="15"></Image>
+                        <Image Source="{Binding Path=Image}" MaxWidth="15" Height="15"></Image>
                         <TextBlock Text="{Binding ProcessName}"></TextBlock>
                         
                     </StackPanel>

@@ -10,7 +10,7 @@ using System.Windows.Media.Imaging;
 
 namespace SharpEngine.memory
 {
-    internal class NewProcess
+    public class NewProcess
     {
         private Process process;
         private Icon icon;

@@ -1,12 +1,9 @@
-﻿using SharpEngine.dll_imports.enums;
-using SharpEngine.dll_imports.structs;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -18,22 +15,10 @@ namespace SharpEngine.memory
 {
     public class ProcessHandler
     {
-
-
-        private List<NewProcess> allProcesses;
-
-        public ProcessHandler()
+        public ObservableCollection<NewProcess> getActiveProcesses()
         {
-            allProcesses = new List<NewProcess>();
-            ListProcesses();
-        }
+            ObservableCollection<NewProcess> processes = new ObservableCollection<NewProcess>();
 
-
-        internal List<NewProcess> AllProcesses { get => allProcesses; set => allProcesses = value; }
-
-
-        private void ListProcesses()
-        {
             Process[] processCollection = Process.GetProcesses().Where(x => x.MainWindowHandle != IntPtr.Zero).ToArray();
             foreach (Process p in processCollection)
             {
@@ -47,10 +32,10 @@ namespace SharpEngine.memory
                     Console.WriteLine(error.Message);
                 }
                 ImageSource source = Imaging.CreateBitmapSourceFromHIcon(ico.Handle, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
-                allProcesses.Add(new NewProcess(p, ico, source));
+                processes.Add(new NewProcess(p, ico, source));
 
             }
-
+            return processes;
         }
     }
 }

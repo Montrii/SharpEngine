@@ -1,4 +1,5 @@
 ﻿using SharpEngine.memory;
+using SharpEngine.MVVM;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -28,23 +29,12 @@ namespace SharpEngine
         public MainWindow()
         {
             InitializeComponent();
-            new Thread(updateProcessesThread).Start();
+           
         }
 
-        public void updateProcessesThread()
+        private void listViewProcesses_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            while(true)
-            {
-                Thread.Sleep(1000);
-                this.Dispatcher.Invoke(() =>
-                {
-                    listViewProcesses.ItemsSource = new ProcessHandler().AllProcesses;
-                });
-            }
+
         }
-
-
-
-
     }
 }

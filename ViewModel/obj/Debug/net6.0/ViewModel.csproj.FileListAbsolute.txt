@@ -1,0 +1,15 @@
+C:\Users\Justin\Documents\GitHub\SharpEngine\ViewModel\bin\Debug\net6.0\ViewModel.deps.json
+C:\Users\Justin\Documents\GitHub\SharpEngine\ViewModel\bin\Debug\net6.0\ViewModel.dll
+C:\Users\Justin\Documents\GitHub\SharpEngine\ViewModel\bin\Debug\net6.0\ViewModel.pdb
+C:\Users\Justin\Documents\GitHub\SharpEngine\ViewModel\obj\Debug\net6.0\ViewModel.csproj.AssemblyReference.cache
+C:\Users\Justin\Documents\GitHub\SharpEngine\ViewModel\obj\Debug\net6.0\ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Justin\Documents\GitHub\SharpEngine\ViewModel\obj\Debug\net6.0\ViewModel.AssemblyInfoInputs.cache
+C:\Users\Justin\Documents\GitHub\SharpEngine\ViewModel\obj\Debug\net6.0\ViewModel.AssemblyInfo.cs
+C:\Users\Justin\Documents\GitHub\SharpEngine\ViewModel\obj\Debug\net6.0\ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\Justin\Documents\GitHub\SharpEngine\ViewModel\obj\Debug\net6.0\ViewModel.dll
+C:\Users\Justin\Documents\GitHub\SharpEngine\ViewModel\obj\Debug\net6.0\refint\ViewModel.dll
+C:\Users\Justin\Documents\GitHub\SharpEngine\ViewModel\obj\Debug\net6.0\ViewModel.pdb
+C:\Users\Justin\Documents\GitHub\SharpEngine\ViewModel\obj\Debug\net6.0\ref\ViewModel.dll
+C:\Users\Justin\Documents\GitHub\SharpEngine\ViewModel\bin\Debug\net6.0\Model.dll
+C:\Users\Justin\Documents\GitHub\SharpEngine\ViewModel\bin\Debug\net6.0\Model.pdb
+C:\Users\Justin\Documents\GitHub\SharpEngine\ViewModel\obj\Debug\net6.0\ViewModel.csproj.CopyComplete
