@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Development\\Visual Studio\\2022\\SharpEngine\\SharpEngine\\SharpEngine.csproj": {}
+    "C:\\Users\\Justin\\Documents\\GitHub\\SharpEngine\\SharpEngine\\SharpEngine.csproj": {}
   },
   "projects": {
-    "D:\\Development\\Visual Studio\\2022\\SharpEngine\\SharpEngine\\SharpEngine.csproj": {
+    "C:\\Users\\Justin\\Documents\\GitHub\\SharpEngine\\SharpEngine\\SharpEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Development\\Visual Studio\\2022\\SharpEngine\\SharpEngine\\SharpEngine.csproj",
+        "projectUniqueName": "C:\\Users\\Justin\\Documents\\GitHub\\SharpEngine\\SharpEngine\\SharpEngine.csproj",
         "projectName": "SharpEngine",
-        "projectPath": "D:\\Development\\Visual Studio\\2022\\SharpEngine\\SharpEngine\\SharpEngine.csproj",
-        "packagesPath": "C:\\Users\\Drago\\.nuget\\packages\\",
-        "outputPath": "D:\\Development\\Visual Studio\\2022\\SharpEngine\\SharpEngine\\obj\\",
+        "projectPath": "C:\\Users\\Justin\\Documents\\GitHub\\SharpEngine\\SharpEngine\\SharpEngine.csproj",
+        "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Justin\\Documents\\GitHub\\SharpEngine\\SharpEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Drago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Justin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -71,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

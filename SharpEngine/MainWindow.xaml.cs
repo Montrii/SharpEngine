@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -27,7 +28,19 @@ namespace SharpEngine
         public MainWindow()
         {
             InitializeComponent();
-            listViewProcesses.ItemsSource = new ProcessHandler().AllProcesses;
+            new Thread(updateProcessesThread).Start();
+        }
+
+        public void updateProcessesThread()
+        {
+            while(true)
+            {
+                Thread.Sleep(1000);
+                this.Dispatcher.Invoke(() =>
+                {
+                    listViewProcesses.ItemsSource = new ProcessHandler().AllProcesses;
+                });
+            }
         }
 
 

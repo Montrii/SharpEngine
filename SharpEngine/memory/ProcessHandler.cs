@@ -26,16 +26,9 @@ namespace SharpEngine.memory
         {
             allProcesses = new List<NewProcess>();
             ListProcesses();
-            test();
         }
 
 
-        public void test()
-        {
-            dotNetMemoryScan dot = new dotNetMemoryScan();
-            var test1 = IntPtr.Zero;
-            var test2 = IntPtr.Zero;
-        }
         internal List<NewProcess> AllProcesses { get => allProcesses; set => allProcesses = value; }
 
 
