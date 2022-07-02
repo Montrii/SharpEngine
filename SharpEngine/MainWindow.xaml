@@ -18,13 +18,16 @@
                 <i:EventTrigger EventName="SelectionChanged">
                     <i:InvokeCommandAction Command="{Binding listBoxSelectionChanged}"  CommandParameter="{Binding ElementName=listViewProcesses, Path=SelectedItem}"/>
                 </i:EventTrigger>
+
             </i:Interaction.Triggers>
+
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
                         <Image Source="{Binding Path=Image}" MaxWidth="15" Height="15"></Image>
-                        <TextBlock Text="{Binding ProcessName}"></TextBlock>
-                        
+                        <TextBlock Text="{Binding ProcessName}">
+                        </TextBlock>
+
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

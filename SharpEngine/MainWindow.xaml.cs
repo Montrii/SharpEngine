@@ -29,11 +29,6 @@ namespace SharpEngine
         public MainWindow()
         {
             InitializeComponent();
-           
-        }
-
-        private void listViewProcesses_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
 
         }
     }

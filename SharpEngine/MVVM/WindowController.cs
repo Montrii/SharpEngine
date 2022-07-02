@@ -22,19 +22,29 @@ namespace SharpEngine.MVVM
         public ObservableCollection<NewProcess> ActiveProcesses { get; set; }
         public event PropertyChangedEventHandler? PropertyChanged;
         public ProcessHandler handler;
+        private NewProcess selectedProcess;
+        private bool isSelected;
 
 
         // event handling
         public DelegateCommand<object> listBoxSelectionChanged { get; set; }
-        
-        
+
+
         public WindowController()
         {
             // event handling
             listBoxSelectionChanged = new DelegateCommand<object>((selecteditem) =>
             {
-                MessageBox.Show("wow it changed!");
+                if(isSelected == false)
+                {
+                    selectedProcess = (NewProcess)selecteditem;
+                    isSelected = true;
+                }
+                MessageBox.Show("item selected, end thread!");
+                
+                
             });
+
 
 
             handler = new ProcessHandler();
@@ -51,16 +61,19 @@ namespace SharpEngine.MVVM
 
         private void updateProcessesUI()
         {
-            while(true)
+            while(isSelected == false)
             {
-                if(ActiveProcesses != null)
+                if(ActiveProcesses != null && isSelected == false)
                 {
                     Thread.Sleep(1000);
                 }
                 Application.Current.Dispatcher.Invoke(() => 
                 {
-                    ActiveProcesses = handler.getActiveProcesses();
-                    OnPropertyChanged(new PropertyChangedEventArgs("ActiveProcesses"));
+                    if(isSelected == false)
+                    {
+                        ActiveProcesses = handler.getActiveProcesses();
+                        OnPropertyChanged(new PropertyChangedEventArgs("ActiveProcesses"));
+                    }
                 });
                 
 
