@@ -14,7 +14,7 @@
     </Window.DataContext>
     <Grid>
         <Button Content="Reload Process List" Margin="301,20,259,488" Command="{Binding reloadProcessesClick}" CommandParameter="{Binding ElementName=listViewProcesses, Path=SelectedItem}"/>
-        <ListBox Name="listViewProcesses" Margin="20,20,416,413" ItemsSource="{Binding ActiveProcesses}">
+        <ListBox Name="listViewProcesses" Margin="20,20,416,413" ItemsSource="{Binding ActiveProcesses}" SelectedItem="{Binding SelectedProcess, Mode=TwoWay}">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="SelectionChanged">
                     <i:InvokeCommandAction Command="{Binding listBoxSelectionChanged}"  CommandParameter="{Binding ElementName=listViewProcesses, Path=SelectedItem}"/>

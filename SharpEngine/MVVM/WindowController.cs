@@ -29,27 +29,36 @@ namespace SharpEngine.MVVM
         // event handling
         public DelegateCommand<object> listBoxSelectionChanged { get; set; }
         public DelegateCommand<object> reloadProcessesClick { get; set; }
-
-
+        public NewProcess SelectedProcess
+        {
+            get
+            {
+                MessageBox.Show("getter called!");
+                return selectedProcess;
+            }
+            set
+            {
+                selectedProcess = value;
+                isSelected = true;
+                MessageBox.Show("setter called!");
+            }
+        }
 
         public WindowController()
         {
             // event handling
             listBoxSelectionChanged = new DelegateCommand<object>((selecteditem) =>
             {
-                if(isSelected == false)
-                {
-                    selectedProcess = (NewProcess)selecteditem;
-                    isSelected = true;
-                }
-                MessageBox.Show("item selected, end thread!");
+                
                 
                 
             });
 
             reloadProcessesClick = new DelegateCommand<object>((selected) =>
             {
-                MessageBox.Show("got clicked.");
+                isSelected = false;
+                SelectedProcess = null;
+                new Thread(updateProcessesUI).Start();
             });
 
 
