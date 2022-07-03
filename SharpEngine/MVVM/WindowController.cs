@@ -28,6 +28,8 @@ namespace SharpEngine.MVVM
 
         // event handling
         public DelegateCommand<object> listBoxSelectionChanged { get; set; }
+        public DelegateCommand<object> reloadProcessesClick { get; set; }
+
 
 
         public WindowController()
@@ -43,6 +45,11 @@ namespace SharpEngine.MVVM
                 MessageBox.Show("item selected, end thread!");
                 
                 
+            });
+
+            reloadProcessesClick = new DelegateCommand<object>((selected) =>
+            {
+                MessageBox.Show("got clicked.");
             });
 
 

@@ -13,6 +13,7 @@
         <vm:WindowController></vm:WindowController>
     </Window.DataContext>
     <Grid>
+        <Button Content="Reload Process List" Margin="301,20,259,488" Command="{Binding reloadProcessesClick}" CommandParameter="{Binding ElementName=listViewProcesses, Path=SelectedItem}"/>
         <ListBox Name="listViewProcesses" Margin="20,20,416,413" ItemsSource="{Binding ActiveProcesses}">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="SelectionChanged">
