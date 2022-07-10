@@ -13,8 +13,18 @@
         <vm:WindowController></vm:WindowController>
     </Window.DataContext>
     <Grid>
-        <Button Content="Reload Process List" Margin="301,20,259,488" Command="{Binding reloadProcessesClick}" CommandParameter="{Binding ElementName=listViewProcesses, Path=SelectedItem}"/>
-        <ListBox Name="listViewProcesses" Margin="20,20,416,413" ItemsSource="{Binding ActiveProcesses}" SelectedItem="{Binding SelectedProcess, Mode=TwoWay}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Content="Reload Process List" Grid.Row="0" Command="{Binding reloadProcessesClick}" CommandParameter="{Binding ElementName=listViewProcesses, Path=SelectedItem}" Grid.ColumnSpan="2" Margin="169,10,64,149" Grid.Column="1"/>
+        <ListBox Name="listViewProcesses" Grid.Row="0" Grid.Column="0" SelectedIndex="{Binding SelectedIndex, Mode=TwoWay}" ItemsSource="{Binding ActiveProcesses}" SelectedItem="{Binding SelectedProcess, Mode=TwoWay}" Grid.ColumnSpan="2" Margin="28,10,117,184" Grid.RowSpan="2">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="SelectionChanged">
                     <i:InvokeCommandAction Command="{Binding listBoxSelectionChanged}"  CommandParameter="{Binding ElementName=listViewProcesses, Path=SelectedItem}"/>
@@ -33,5 +43,14 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <TextBlock Text="Memory Address:" Grid.Row="1" Grid.Column="0" Margin="28,53,106,109"/>
+        <TextBox Grid.Row="1" Text="{Binding MemoryString, Mode=TwoWay}" Grid.ColumnSpan="2" Margin="151,53,82,116"/>
+        <TextBox Grid.Row="1" Text="{Binding WriteToAddress, Mode=TwoWay}" Margin="214,53,64,116" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <ComboBox SelectedIndex="0" Grid.Row="1" Grid.Column="0" SelectedItem="{Binding SelectedMemory, Mode=TwoWay}" ItemsSource="{Binding ReadWriteSelection, Mode=TwoWay}" Margin="28,15,126,149"/>
+        <ComboBox SelectedIndex="0" Grid.Row="1" Grid.Column="0" SelectedItem="{Binding SelectedDataType, Mode=TwoWay}" ItemsSource="{Binding ResultSelection, Mode=TwoWay}" Margin="28,86,106,69"/>
+        <TextBox Text="{Binding ResultText, Mode=TwoWay}" Grid.Row="1" Grid.ColumnSpan="2" Margin="151,93,82,76" IsEnabled="False"/>
+        <Button Content="Start" Grid.Row="1" Command="{Binding startMemoryProcess}" Margin="28,149,116,10"/>
+        <TextBlock Text="Input:" Grid.Row="1" Grid.Column="1" Margin="157,53,41,109"/>
+        <ListBox ItemsSource="{Binding Log}" Grid.ColumnSpan="2" Margin="88,149,64,45" Grid.RowSpan="2" Grid.Column="1" Grid.Row="1"></ListBox>
     </Grid>
 </Window>

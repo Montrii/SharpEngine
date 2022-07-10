@@ -303,23 +303,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Justin\\.nuget\\packages\\": {},
+    "C:\\Users\\Drago\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Justin\\Documents\\GitHub\\SharpEngine\\SharpEngine\\SharpEngine.csproj",
+      "projectUniqueName": "C:\\Users\\Drago\\Desktop\\Schoolstuff\\SharpEngine\\SharpEngine\\SharpEngine.csproj",
       "projectName": "SharpEngine",
-      "projectPath": "C:\\Users\\Justin\\Documents\\GitHub\\SharpEngine\\SharpEngine\\SharpEngine.csproj",
-      "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Justin\\Documents\\GitHub\\SharpEngine\\SharpEngine\\obj\\",
+      "projectPath": "C:\\Users\\Drago\\Desktop\\Schoolstuff\\SharpEngine\\SharpEngine\\SharpEngine.csproj",
+      "packagesPath": "C:\\Users\\Drago\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Drago\\Desktop\\Schoolstuff\\SharpEngine\\SharpEngine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Justin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Drago\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -394,7 +394,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Expression.Interaction 3.0.40218' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "message": "Das Paket \"Expression.Interaction 3.0.40218\" wurde nicht mit dem Projektzielframework \"net6.0-windows7.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
       "libraryId": "Expression.Interaction",
       "targetGraphs": [
         "net6.0-windows7.0"

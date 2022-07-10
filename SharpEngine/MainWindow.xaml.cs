@@ -28,6 +28,7 @@ namespace SharpEngine
     {
         public MainWindow()
         {
+            //test
             InitializeComponent();
 
         }
